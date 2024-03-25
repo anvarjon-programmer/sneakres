@@ -18,7 +18,7 @@ function App() {
     setQuery(event.target.value)
   }
   const filteredItems = AllProducts.filter((product) => 
-    product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() !== -1));
+    product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()) !== -1);
   //-----------Input Filter-------------->
 
   //-----------Radio Filter-------------->
